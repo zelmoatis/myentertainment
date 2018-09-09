@@ -288,11 +288,12 @@ footer {
 
 #newspaper {
 	font-size: 100px;
-	vertical-align: middle
+	position: relative;
+	vertical-align: middle;
 }
 
 #arrows {
-	margin-left: 20px;
+	margin-left: 25px;
 	font-size: 50px;
 	vertical-align: middle
 }
@@ -341,6 +342,54 @@ footer {
 	animation-delay: 0.8s;
 	-webkit-animation-delay: 0.8s;
 }
+
+@keyframes wiggle {
+	0% {
+		transform: rotate(0deg);
+		left: -10px;
+	}
+	10% {
+		transform: rotate(5deg);
+		left: 10px;
+	}
+	20% {
+		transform: rotate(-5deg);
+		left: -10px;
+	}
+	30% {
+		transform: rotate(15deg);
+		left: 10px;
+	}
+	40% {
+		transform: rotate(-20deg);
+		left: 10px;
+	}
+	50% {
+		transform: rotate(15deg);
+		left: 10px;
+	}
+	60% {
+		transform: rotate(0deg);
+		left: 10px;
+	}
+	70% {
+		transform: rotate(-5deg);
+		left: 10px;
+	}
+	80% {
+		transform: rotate(5deg);
+		left: 10px;
+	}
+	90% {
+		transform: rotate(0deg);
+		left: 10px;
+	}
+}
+
+#newspaper {
+	animation: wiggle 1.2s linear infinite forwards;
+}
+
 @media screen and (max-width:640px){
 
 footer {
