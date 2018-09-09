@@ -79,9 +79,11 @@ formHandler = function(){
 	var msg = document.getElementById('signup_msg');
 	msg.innerHTML = "";
 	if( frmo.elements[0].value.length == 0 || frmo.elements[1].value.length == 0 || frmo.elements[2].value.length == 0 ){
+		msg.style.display = 'block';
 		msg.style.color = 'red';
 		msg.innerHTML = "*Vă rugăm să completați toate câmpurile";
 	}else{
+		msg.style.display = 'block';
 		msg.style.color = 'black';
 		msg.innerHTML = "Vă mulțumim, " + frmo.elements[0].value + " " + frmo.elements[1].value + " ! Un mail de confirmare a fost trimis la adresa " + frmo.elements[2].value + ".";
 

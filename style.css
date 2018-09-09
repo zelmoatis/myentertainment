@@ -206,7 +206,7 @@ footer {
 	padding: 0px;
 }
 #first{
-	margin-left:10%;
+	margin-left:7%;
 	margin-right:4%;
 	
 }
@@ -238,6 +238,109 @@ footer {
 }
 }
 
+#frm > input{
+	padding:5pt;
+	margin-bottom: 1rem;
+}
+#frm > label,#formButton{
+	display: block;
+	font-size: 15pt;
+	margin-bottom: 1rem;
+}
+
+#formButton {
+	border: 0;
+	border-radius: 2px;
+	font-size: unset;
+	cursor: pointer;
+	color:white;
+	background-color:#a7dbdb;
+	transition: background-color 0.5s;
+}
+#formButton:hover{
+	background-color:#49b2c7;
+}
+
+.articlePage.signup > article{
+	display: inline-block;
+	width: 200px;
+}
+
+.articlePage.signup > aside{
+	vertical-align: top;
+	display: inline-block;
+	width: calc(100% - 250px);
+}
+
+.articlePage.signup > aside > p{
+	font-size: 20pt;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+}
+
+#newsletter_prev {
+	text-align: center;
+}
+#newsletter_prev > p{
+	text-align: center;
+	color: #e0e4cc;
+}
+
+#newspaper {
+	font-size: 100px;
+	vertical-align: middle
+}
+
+#arrows {
+	margin-left: 20px;
+	font-size: 50px;
+	vertical-align: middle
+}
+
+#mailbox {
+	height: 200px;
+	vertical-align: middle;
+	fill:#e0e4cc;
+}
+
+@-webkit-keyframes fadeinout {
+	50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+	50% { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+	0%, 49% { opacity: 0; }
+	48% {opacity: 1;}
+}
+
+@keyframes fadein {
+	0%, 49% { opacity: 0; }
+	48% { opacity: 1; }
+}
+
+#arrows > i {
+	opacity:0;
+	animation: fadeinout 1.2s linear infinite forwards;
+	-webkit-animation: fadeinout 1.2s linear infinite forwards;
+}
+#arrows > i:nth-child(1){
+	animation-delay: 0s;
+	-webkit-animation-delay: 0s;
+}
+
+#arrows > i:nth-child(2){
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+#arrows > i:nth-child(3){
+	animation-name: fadein;
+	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+}
 @media screen and (max-width:640px){
 
 footer {
@@ -294,7 +397,7 @@ footer {
 #logo{
 	vertical-align:middle;
 	height:60px;
-	display:none;/*aici*/
+	display:none;
 }
 #menuItems li{
 	margin-right:0px;
